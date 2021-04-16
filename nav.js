@@ -1,6 +1,7 @@
-window.onresize = function() {checkFunction};
-function checkFunction(){
-if(window.innerWidth >=992){
+//window.onresize = function() {checkFunction};
+//function checkFunction(){
+window.onresize= function() { console.log(window.innerWidth); }
+if(window.innerWidth >=1200){
  window.onscroll = function() {scrollFunction()};
 
  
@@ -25,4 +26,7 @@ if(window.innerWidth >=992){
 else{
 
 }
+if(window.innerwidth <1200 ){
+document.getElementById("arrow").style.top="20vh";
 }
+//}
