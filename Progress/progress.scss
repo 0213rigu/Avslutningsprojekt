@@ -1,0 +1,57 @@
+* {
+    color: white;
+    font-family: lobster;
+    margin:0;
+    padding:0px;
+    border:0px;
+}
+
+&.progress-75 {
+    @include draw-progress(75, #8e44ad);
+  }
+
+@media (max-width: 575.98px){
+    
+}
+
+@media (min-width: 576px) and (max-width: 1199px){
+
+}
+
+@media (min-width: 1200px){
+    #arrowicon{
+        display:none;
+    }
+    .topRow{
+        height:96px;
+    }
+    .linkDiv {
+        display: flex;
+        justify-content: space-around;
+        position: fixed;
+        background-color:rgba(25,25,25,.5);
+        position:fixed;
+    }
+    .background{
+        background-color: rgb(25,25,25);
+        min-height:100%;
+        height:100vh
+    }
+    a:hover {
+        text-decoration: underline;
+        color: white;
+    }
+    a {
+        font-size: 400%;
+        text-decoration: none;
+        color: white;
+    }
+    .bannerrow{
+        background-image: url(../Bilder/gymbanner.jpg);
+        height:30vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-y: center;
+    }
+    
+}

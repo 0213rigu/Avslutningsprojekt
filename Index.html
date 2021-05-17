@@ -1,58 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="bs460.css"/>
+
     <script src="nav.js"></script>
+
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="Main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Main.css">
     <title>Healthi</title>
 
 </head>
+
 <body>
-    <div class="grid">
-        <div class="col-md-12 background">
-        <div class="row" style="height:40vh">
-            <nav class="col-xs-12 col-sm-12 col-md-12" id="navbar" >
-                <div class=" col-sm-12 col-md-11 linkDiv">
-                <div class="row logo">
-                <a href="Index.html" class="col-sm-12" id="navbar-a1">Healthi!</a>
-                </div>
-                <div class="row">
-                    <div class="col-sm-12 col-md-0 arrow" id="arrow">
-                        <img src="Bilder/Downarrow.png" class="arrowicon" onclick="slider()">
-                    </div>
-                </div>
-                <a href="Healthi.html" class="col-sm-0" id="navbar-a2">Progress</a>
-                <a href="Healthi.html" class="col-sm-0" id="navbar-a3">Goals</a>
-            </div>
-            </nav>
-            <div class="col-md-12"></div>
+  <div class="container-fluid background">
+    <div class="row rowPhone">
+      <div class="col-sm-4">
+        <div id="nav-icon1">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
-        <div class="row gradient">
-            <div class="col-md-5 imgDiv">
-                <img src="Bilder/Fitness Transparent.png" class="frontImg">
-            </div>
-            <div class="col-md-7" style="max-height: 100vh; display:flexbox;">
-                <h1>Start tracking your progress
-                </h1>
-                <h2 >Using Healthi!
-                </h2>
-            </div>
-        </div>
-        <div class="row" style="height:40vh; ">
-            <div class="col-md-5"></div>
-            <div class="col-md-7">
-                <div class=" col-md-5 joinbtn"><a>Join Today</a></div>
-            </div>
-        </div>
+      </div>
+      <div class="col-sm-8">
+        <span style="color: black;"></span>
+      </div>
     </div>
-    <div class="col-md-12" style="height:40vh"></div>
-    </div>    
+
+    <div class="row topRow">
+      <div class="col-sm-3 col-md-6 col-lg-0 arrowicon" id="arrowicon" onclick="arrowFunction()">
+        <img src="Bilder/Downarrow.png" id="arrowimg">
+      </div>
+
+      <div class="col-sm-12 col-md-6 col-lg-12 linkDiv" id="linkDiv">
+      
+        <a href="/" id="navbar-a1">Healthi!</a>
+        <a href="Healthi.html" id="navbar-a2">Progress</a>
+        <a href="Healthi.html"  id="navbar-a3">Goals</a>
+        <img src="Bilder/yoga.png" class="col-md-12 col-lg-0 yoga">
+  
+      </div>
+    </div>
+
+    <div class="row logoTablet">
+      <div class="col-md-3"></div>
+      <div class="col-md-6">
+        <h1 class="bannertext">Healthi</h1>
+      </div>
+    </div>
+
+    <div class="row gradient">
+      <div class=" col-md-7 col-lg-5 imgDiv">
+        <img src="Bilder/Fitness Transparent.png" class="frontImg">
+      </div>
+      <div class="col-sm-12 col-md-5 col-lg-7" id="joinText" style="max-height: 100vh; display:flexbox;">
+        <h1>Start tracking your progress</h1>
+        <h2>Using Healthi!</h2>
+      </div>
+    </div>
+
+    <div class="row btnrow" style="height:40vh;" >
+      <div class="col-md-3 col-lg-5"></div>
+      <div class="col-md-6 col-lg-7">
+        <div class="col-lg-5 joinbtn"><a>Join Today</a></div>
+      </div>
+      <div class="col-md-3 col-lg-0"></div>
+    </div>
+  </div>
 </body>
+
 </html>
