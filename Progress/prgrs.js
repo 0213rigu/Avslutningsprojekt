@@ -1,4 +1,12 @@
 var procent = 87;
+var goalprogress = 0;
+var goalline = 0;
+ function prgrscalc() {
+    document.getElementById("prgrsfill").style.strokeDashoffset = "calc( 440 - (440 *" + procent + ") / 100)" ;
+    }
+
+window.onload = prgrscalc;
+
 
 function collectvalue(){
     var goalname = document.getElementById("goal").value;
@@ -10,11 +18,25 @@ function collectvalue(){
     document.getElementById("nmbrlbl").style.display="none";*/
     procent = 0;
     prgrscalc();
-   
+    $("#unitlbl").remove();
+    $("#add").show();
+    $("#submit").remove();
+    $("#goallbl").remove();
+    $("#goalunit").remove();
+    $("#goal").remove();
+
+    document.getElementById("nmbrlbl").innerHTML = "Add progress";
+    goalline = goalrange;
+    console.log(goalline);
 }
 
 
-window.onload = function prgrscalc() {
-document.getElementById("prgrsfill").style.strokeDashoffset = "calc( 440 - (440 *" + procent + ") / 100)" ;
+function addprgrs( ){
+    let addval = document.getElementById("goalnmbr").value;
+    goalprogress = goalprogress + addval;
+    procent = goalprogress/goalline;
+    console.log(procent);
+    prgrscalc();
 }
+
 

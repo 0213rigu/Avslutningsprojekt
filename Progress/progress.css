@@ -135,4 +135,8 @@
     #goalunit{
         color:grey;
     }
+    #add{
+        color:grey;
+        display:none;
+    }
 }

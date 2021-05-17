@@ -45,13 +45,14 @@
 
             <div class="formdiv">
                 <form class="goalsetup">
-                    <label for="goal">Whats your goal?:</label><br>
-                    <input type="text" id="goal" name="goal" value="Input goal"><br>
+                    <label for="goal" id="goallbl">Whats your goal?:</label><br>
+                    <input type="text" id="goal" name="goal" placeholder="Input goal"><br>
                     <label for="goalnmbr" id="nmbrlbl">Goal range:</label><br>
-                    <input type="number" id="goalnmbr" name="goalnmbr" value="0"><br>
-                    <label for="goalunit">Goal Unit:</label><br>
-                    <input type="text" id="goalunit" name="goalunit" value="Unit"><br><br>
+                    <input type="number" id="goalnmbr" name="goalnmbr" placeholder="0"><br>
+                    <label for="goalunit" id="unitlbl">Goal Unit:</label><br>
+                    <input type="text" id="goalunit" name="goalunit" placeholder="Unit"><br><br>
                     <button type="button" id="submit" onclick="collectvalue()">Submit</button>
+                    <button type="button" id="add" onclick="addprgrs()">Add</button>
                   </form> 
             </div>
 
