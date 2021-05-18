@@ -1,8 +1,13 @@
-var procent = 87;
+var procent = 0;
 var goalprogress = 0;
-var goalline = 0;
+var procenttxt = 0;
+var goalrange = 0;
+var goalunit = "unit";
  function prgrscalc() {
-    document.getElementById("prgrsfill").style.strokeDashoffset = "calc( 440 - (440 *" + procent + ") / 100)" ;
+    document.getElementById("prgrsfill").style.strokeDashoffset = "calc( 440 - (440 *" + procent + ")" ;
+    procenttxt = Math.round(procent*100);
+    document.getElementById("percentnmbr").innerHTML = procenttxt;
+    document.getElementById("goalprogress").innerHTML = goalprogress + "/" + goalrange + " " + goalunit;
     }
 
 window.onload = prgrscalc;
@@ -11,8 +16,8 @@ window.onload = prgrscalc;
 function collectvalue(){
     var goalname = document.getElementById("goal").value;
     document.getElementById("goalname").innerHTML = goalname;
-    var goalrange = document.getElementById("goalnmbr").value;
-    var goalunit = document.getElementById("goalunit").value;
+    goalrange = document.getElementById("goalnmbr").value;
+    goalunit = document.getElementById("goalunit").value;
     document.getElementById("goalprogress").innerHTML = "0/" +  goalrange + " " + goalunit;
    /* document.getElementById("goalnmbr").style.display = "none";
     document.getElementById("nmbrlbl").style.display="none";*/
@@ -26,17 +31,28 @@ function collectvalue(){
     $("#goal").remove();
 
     document.getElementById("nmbrlbl").innerHTML = "Add progress";
-    goalline = goalrange;
-    console.log(goalline);
+
 }
 
 
 function addprgrs( ){
+    if(procent<1){
     let addval = document.getElementById("goalnmbr").value;
-    goalprogress = goalprogress + addval;
-    procent = goalprogress/goalline;
+    goalprogress = parseInt(goalprogress) + parseInt(addval);
+    procent = goalprogress/goalrange;
     console.log(procent);
     prgrscalc();
+    if(procent>1){
+        procent=1;
+        goalprogress=goalrange;
+        prgrscalc();
+    }
+    }
+    else{
+        procent = 1;    
+        goalprogress=goalrange;
+        prgrscalc();
+    }
 }
 
 

@@ -12,7 +12,163 @@
 }
 
 @media (min-width: 576px) and (max-width: 1199px){
+    a {
+        font-size: 400%;
+        text-decoration: none;
+        color: white;
+        clear:both;
+        display:block;
+    }
+    #navbar{
+        height:100px;
+        margin-left:0px;
+        margin-right:0px;
+        padding:0px;
+    }
 
+    .arrowicon img{
+
+        transform:rotate(90deg);
+        left:0px;
+        transition:1s;
+    }
+    .arrowicon img.active{
+
+        transform:rotate(270deg);
+        left:50%;
+        transition:1s;
+    }
+    #arrowicon{
+        transition:1s;
+        left:0%;
+        position:fixed;
+    }
+    #arrowicon.active{
+        left:50%;
+        transition:1s;
+        z-index: 2;
+    }
+    .arrowicon{
+        padding:0px;
+        z-index: 2;
+    }
+    .linkDiv{
+        background-color:black;
+        left:-50%;
+        transition:1s;
+        height:110vh;
+        position:absolute;
+        padding-top:100px;
+        top:-100px;
+        z-index: 2;
+    }
+    #linkDiv.active {
+        left:0%;
+        transition:1s;
+        position:absolute;
+        z-index: 2;
+    }
+    .frontImg{
+        height: 160%;
+        position:absolute;
+        top:-25%;
+    }
+    .gradient{
+        z-index: 1;
+    }
+    .logoTablet{
+        height:20%;
+    }
+    .card{
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+        min-height: 50vh;
+        background:orange;
+        flex-direction: row;
+    }
+    .box{
+        display:flex;
+        width:300px;
+        position:relative;
+        height:400px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background:rgb(25,25,25);
+    }
+    .box .percent{
+        position: relative;
+        width:150px;
+        height:150px;
+    }
+    .box .percent svg{
+        position: relative;
+        width:150px;
+        height:150px;
+    }
+    .box .percent svg circle{
+        width:150px;
+        height:150px;
+        fill:none;
+        stroke-width:10px;
+        stroke:purple;
+        transform: translate(5px,5px);
+        stroke-dasharray: 440;
+        stroke-dashoffset: 440;
+    }
+    .box .percent svg circle:nth-child(1){
+        stroke-dashoffset: 0;
+        stroke: rgb(50,50,50);
+    }
+    .box .percent svg circle:nth-child(2){
+        /*stroke-dashoffset: calc(440 - (440*87) / 100);*/
+        stroke:purple;
+        transition:1s;
+    } 
+    .box .percent .number{
+        position: absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .box .percent .number h2{
+        font-size:48px
+    }
+    .box .percent .number h2 span{
+        font-size:24px
+    }
+    .box .text{
+        padding:10px 0 0;
+    }
+    .formdiv{
+        background-color:black;
+        width:300px;
+        height:400px;
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #goal{
+        color:grey;
+    }
+    #goalnmbr{
+        color:grey;
+    }
+    #submit{
+        color:grey;
+    }
+    #goalunit{
+        color:grey;
+    }
+    #add{
+        color:grey;
+        display:none;
+    }
 }
 
 @media (min-width: 1200px){
@@ -95,6 +251,7 @@
     .box .percent svg circle:nth-child(2){
         /*stroke-dashoffset: calc(440 - (440*87) / 100);*/
         stroke:purple;
+        transition:1s;
     } 
     .box .percent .number{
         position: absolute;
