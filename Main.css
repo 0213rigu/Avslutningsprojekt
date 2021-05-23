@@ -45,12 +45,7 @@ body {
         display: flex;
     }
 
-    * {
-        color: white;
-        font-family: lobster;
-        padding: 0px;
-        margin: 0px;
-    }
+
     .frontImg{
         display:none;
     }
@@ -135,6 +130,10 @@ body {
     }
     .topRow{
         height:0vh;
+    }
+    #joinText{
+        padding:0px;
+        width:auto;
     }
 
 }
