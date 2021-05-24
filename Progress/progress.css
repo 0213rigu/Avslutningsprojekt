@@ -1,359 +1,353 @@
 * {
     color: white;
     font-family: lobster;
-    margin:0;
-    padding:0px;
-    border:0px;
-}
-body{
-    background-color: rgb(25,25,25);
+    margin: 0;
+    padding: 0px;
+    border: 0px;
 }
 
-@media (max-width: 575.98px){
+body {
+    background-color: rgb(25, 25, 25);
+}
+
+@media (max-width: 575.98px) {
     .col-sm-4 {
         flex: 0 0 33.333333%;
     }
-
     .col-sm-8 {
-        -ms-flex:0 0 66.666667%;
-        flex:0 0 66.666667%;
-        max-width:66.666667%
+        -ms-flex: 0 0 66.666667%;
+        flex: 0 0 66.666667%;
+        max-width: 66.666667%
     }
-
-
-
     .rowPhone {
         display: flex;
     }
-    .linkDiv{
-        background-color:black;
-        height:100vh;
-        padding-left:0px;
-        padding-right:0px;
-        top:-145px;
-        left:-100%;
+    .linkDiv {
+        background-color: black;
+        height: 100vh;
+        padding-left: 0px;
+        padding-right: 0px;
+        top: -145px;
+        left: -100%;
         justify-content: center;
-        transition:.5s;
+        transition: .5s;
         z-index: 2;
     }
-    .linkDiv.open{
-        left:0%;
-        transition:.5s;
+    .linkDiv.open {
+        left: 0%;
+        transition: .5s;
     }
-
-    #arrowimg{
-        display:none;
+    #arrowimg {
+        display: none;
     }
-    .linerow{
-        height:10vh;
-        background-color:black;
+    .linerow {
+        height: 10vh;
+        background-color: black;
     }
-    .line{background-color:white;}
+    .line {
+        background-color: white;
+    }
     a {
         font-size: 300%;
         text-decoration: none;
         color: white;
-        clear:both;
-        margin-left:30px;
+        clear: both;
+        margin-left: 30px;
     }
-    #nav-icon1{
-        position:absolute;
+    #nav-icon1 {
+        position: absolute;
         z-index: 3;
     }
-    #navbar-a1{
-        margin-top:145px;
-        display:block;
-        
+    #navbar-a1 {
+        margin-top: 145px;
+        display: block;
     }
-    #navbar-a2{
-        display:flex;
+    #navbar-a2 {
+        display: flex;
     }
-    .topRow{
-        height:0vh;
+    .topRow {
+        height: 0vh;
     }
-    .card{
-        display:flex;
+    .card {
+        display: flex;
         justify-content: space-around;
         align-items: center;
         min-height: 50vh;
         flex-direction: column;
-        background-color: rgb(75,75,75);
+        background-color: rgb(75, 75, 75);
     }
-    .box{
-        display:flex;
-        width:300px;
-        position:relative;
-        height:400px;
+    .box {
+        display: flex;
+        width: 300px;
+        position: relative;
+        height: 400px;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        background:rgb(25,25,25);
+        background: rgb(25, 25, 25);
     }
-    .box .percent{
+    .box .percent {
         position: relative;
-        width:150px;
-        height:150px;
+        width: 150px;
+        height: 150px;
     }
-    .box .percent svg{
+    .box .percent svg {
         position: relative;
-        width:150px;
-        height:150px;
+        width: 150px;
+        height: 150px;
     }
-    .box .percent svg circle{
-        width:150px;
-        height:150px;
-        fill:none;
-        stroke-width:10px;
-        stroke:purple;
-        transform: translate(5px,5px);
+    .box .percent svg circle {
+        width: 150px;
+        height: 150px;
+        fill: none;
+        stroke-width: 10px;
+        stroke: purple;
+        transform: translate(5px, 5px);
         stroke-dasharray: 440;
         stroke-dashoffset: 440;
     }
-    .box .percent svg circle:nth-child(1){
+    .box .percent svg circle:nth-child(1) {
         stroke-dashoffset: 0;
-        stroke: rgb(50,50,50);
+        stroke: rgb(50, 50, 50);
     }
-    .box .percent svg circle:nth-child(2){
+    .box .percent svg circle:nth-child(2) {
         /*stroke-dashoffset: calc(440 - (440*87) / 100);*/
-        stroke:purple;
-        transition:1s;
-    } 
-    .box .percent .number{
+        stroke: purple;
+        transition: 1s;
+    }
+    .box .percent .number {
         position: absolute;
-        top:0;
-        left:0;
-        width:100%;
-        height:100%;
-        display:flex;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
         justify-content: center;
         align-items: center;
     }
-    .box .percent .number h2{
-        font-size:48px
+    .box .percent .number h2 {
+        font-size: 48px
     }
-    .box .percent .number h2 span{
-        font-size:24px
+    .box .percent .number h2 span {
+        font-size: 24px
     }
-    .box .text{
-        padding:10px 0 0;
+    .box .text {
+        padding: 10px 0 0;
     }
-    .formdiv{
-        background-color:black;
-        width:300px;
-        height:400px;
-        display:flex;
+    .formdiv {
+        background-color: black;
+        width: 300px;
+        height: 400px;
+        display: flex;
         justify-content: space-around;
         align-items: center;
-        clear:both;
+        clear: both;
     }
-    #goal{
-        color:grey;
+    #goal {
+        color: grey;
     }
-    #goalnmbr{
-        color:grey;
+    #goalnmbr {
+        color: grey;
     }
-    #submit{
-        color:grey;
+    #submit {
+        color: grey;
     }
-    #goalunit{
-        color:grey;
+    #goalunit {
+        color: grey;
     }
-    #add{
-        color:grey;
-        display:none;
+    #add {
+        color: grey;
+        display: none;
     }
-
-    .chart{
-        display:none;
+    .chart {
+        display: none;
+        background-color: white;
     }
 }
 
-@media (min-width: 576px) and (max-width: 1199px){
+@media (min-width: 576px) and (max-width: 1199px) {
     a {
         font-size: 400%;
         text-decoration: none;
         color: white;
-        clear:both;
-        display:block;
+        clear: both;
+        display: block;
     }
-
-    #navbar{
-        height:100px;
-        margin-left:0px;
-        margin-right:0px;
-        padding:0px;
+    #navbar {
+        height: 100px;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding: 0px;
     }
-
-    .arrowicon img{
-
-        transform:rotate(90deg);
-        left:0px;
-        transition:1s;
+    .arrowicon img {
+        transform: rotate(90deg);
+        left: 0px;
+        transition: 1s;
     }
-    .arrowicon img.active{
-
-        transform:rotate(270deg);
-        left:50%;
-        transition:1s;
+    .arrowicon img.active {
+        transform: rotate(270deg);
+        left: 50%;
+        transition: 1s;
     }
-    #arrowicon{
-        transition:1s;
-        left:0%;
-        position:fixed;
+    #arrowicon {
+        transition: 1s;
+        left: 0%;
+        position: fixed;
     }
-    #arrowicon.active{
-        left:50%;
-        transition:1s;
+    #arrowicon.active {
+        left: 50%;
+        transition: 1s;
         z-index: 2;
     }
-    .arrowicon{
-        padding:0px;
+    .arrowicon {
+        padding: 0px;
         z-index: 2;
     }
-    .linkDiv{
-        background-color:black;
-        left:-50%;
-        transition:1s;
-        height:110vh;
-        position:absolute;
-        padding-top:100px;
-        top:-100px;
+    .linkDiv {
+        background-color: black;
+        left: -50%;
+        transition: 1s;
+        height: 110vh;
+        position: absolute;
+        padding-top: 100px;
+        top: -100px;
         z-index: 2;
     }
     #linkDiv.active {
-        left:0%;
-        transition:1s;
-        position:absolute;
+        left: 0%;
+        transition: 1s;
+        position: absolute;
         z-index: 2;
     }
-    .frontImg{
+    .frontImg {
         height: 160%;
-        position:absolute;
-        top:-25%;
+        position: absolute;
+        top: -25%;
     }
-    .gradient{
+    .gradient {
         z-index: 1;
     }
-    .logoTablet{
-        height:20%;
+    .logoTablet {
+        height: 20%;
     }
-    .card{
-        display:flex;
+    .card {
+        display: flex;
         justify-content: space-around;
         align-items: center;
         min-height: 50vh;
-        background:purple;
+        background: purple;
         flex-direction: row;
     }
-    .box{
-        display:flex;
-        width:300px;
-        position:relative;
-        height:400px;
+    .box {
+        display: flex;
+        width: 300px;
+        position: relative;
+        height: 400px;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        background:rgb(25,25,25);
+        background: rgb(25, 25, 25);
     }
-    .box .percent{
+    .box .percent {
         position: relative;
-        width:150px;
-        height:150px;
+        width: 150px;
+        height: 150px;
     }
-    .box .percent svg{
+    .box .percent svg {
         position: relative;
-        width:150px;
-        height:150px;
+        width: 150px;
+        height: 150px;
     }
-    .box .percent svg circle{
-        width:150px;
-        height:150px;
-        fill:none;
-        stroke-width:10px;
-        stroke:purple;
-        transform: translate(5px,5px);
+    .box .percent svg circle {
+        width: 150px;
+        height: 150px;
+        fill: none;
+        stroke-width: 10px;
+        stroke: purple;
+        transform: translate(5px, 5px);
         stroke-dasharray: 440;
         stroke-dashoffset: 440;
     }
-    .box .percent svg circle:nth-child(1){
+    .box .percent svg circle:nth-child(1) {
         stroke-dashoffset: 0;
-        stroke: rgb(50,50,50);
+        stroke: rgb(50, 50, 50);
     }
-    .box .percent svg circle:nth-child(2){
+    .box .percent svg circle:nth-child(2) {
         /*stroke-dashoffset: calc(440 - (440*87) / 100);*/
-        stroke:purple;
-        transition:1s;
-    } 
-    .box .percent .number{
+        stroke: purple;
+        transition: 1s;
+    }
+    .box .percent .number {
         position: absolute;
-        top:0;
-        left:0;
-        width:100%;
-        height:100%;
-        display:flex;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
         justify-content: center;
         align-items: center;
     }
-    .box .percent .number h2{
-        font-size:48px
+    .box .percent .number h2 {
+        font-size: 48px
     }
-    .box .percent .number h2 span{
-        font-size:24px
+    .box .percent .number h2 span {
+        font-size: 24px
     }
-    .box .text{
-        padding:10px 0 0;
+    .box .text {
+        padding: 10px 0 0;
     }
-    .formdiv{
-        background-color:black;
-        width:300px;
-        height:400px;
-        display:flex;
+    .formdiv {
+        background-color: black;
+        width: 300px;
+        height: 400px;
+        display: flex;
         justify-content: space-around;
         align-items: center;
     }
-    #goal{
-        color:grey;
+    #goal {
+        color: grey;
     }
-    #goalnmbr{
-        color:grey;
+    #goalnmbr {
+        color: grey;
     }
-    #submit{
-        color:grey;
+    #submit {
+        color: grey;
     }
-    #goalunit{
-        color:grey;
+    #goalunit {
+        color: grey;
     }
-    #add{
-        color:grey;
-        display:none;
+    #add {
+        color: grey;
+        display: none;
     }
-    .chart{
-        display:none;
+    .chart {
+        display: none;
+        background-color: white;
     }
     .rowPhone {
         display: none;
     }
 }
 
-@media (min-width: 1200px){
-    #arrowicon{
-        display:none;
+@media (min-width: 1200px) {
+    #arrowicon {
+        display: none;
     }
-    .topRow{
-        height:96px;
+    .topRow {
+        height: 96px;
     }
     .linkDiv {
         display: flex;
         justify-content: space-around;
         position: fixed;
-        background-color:rgba(25,25,25,.5);
-        position:fixed;
+        background-color: rgba(25, 25, 25, .5);
+        position: fixed;
         z-index: 2;
     }
-    .background{
-        background-color: rgb(25,25,25);
-        min-height:100%;
-        height:100vh
+    .background {
+        background-color: rgb(25, 25, 25);
+        min-height: 100%;
+        height: 100vh
     }
     a:hover {
         text-decoration: underline;
@@ -364,124 +358,126 @@ body{
         text-decoration: none;
         color: white;
     }
-    .bannerrow{
+    .bannerrow {
         background-image: url(../Bilder/gymbanner.jpg);
-        height:30vh;
+        height: 30vh;
         background-size: cover;
         background-repeat: no-repeat;
         background-position-y: center;
     }
-    .card{
-        display:flex;
+    .card {
+        display: flex;
         justify-content: space-around;
         align-items: center;
         min-height: 50vh;
         flex-direction: row;
         background-color: purple;
     }
-    .box{
-        display:flex;
-        width:300px;
-        position:relative;
-        height:400px;
+    .box {
+        display: flex;
+        width: 300px;
+        position: relative;
+        height: 400px;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        background:rgb(25,25,25);
+        background: rgb(25, 25, 25);
     }
-    .box .percent{
+    .box .percent {
         position: relative;
-        width:150px;
-        height:150px;
+        width: 150px;
+        height: 150px;
     }
-    .box .percent svg{
+    .box .percent svg {
         position: relative;
-        width:150px;
-        height:150px;
+        width: 150px;
+        height: 150px;
     }
-    .box .percent svg circle{
-        width:150px;
-        height:150px;
-        fill:none;
-        stroke-width:10px;
-        stroke:purple;
-        transform: translate(5px,5px);
+    .box .percent svg circle {
+        width: 150px;
+        height: 150px;
+        fill: none;
+        stroke-width: 10px;
+        stroke: purple;
+        transform: translate(5px, 5px);
         stroke-dasharray: 440;
         stroke-dashoffset: 440;
     }
-    .box .percent svg circle:nth-child(1){
+    .box .percent svg circle:nth-child(1) {
         stroke-dashoffset: 0;
-        stroke: rgb(50,50,50);
+        stroke: rgb(50, 50, 50);
     }
-    .box .percent svg circle:nth-child(2){
+    .box .percent svg circle:nth-child(2) {
         /*stroke-dashoffset: calc(440 - (440*87) / 100);*/
-        stroke:purple;
-        transition:1s;
-    } 
-    .box .percent .number{
+        stroke: purple;
+        transition: 1s;
+    }
+    .box .percent .number {
         position: absolute;
-        top:0;
-        left:0;
-        width:100%;
-        height:100%;
-        display:flex;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
         justify-content: center;
         align-items: center;
     }
-    .box .percent .number h2{
-        font-size:48px
+    .box .percent .number h2 {
+        font-size: 48px
     }
-    .box .percent .number h2 span{
-        font-size:24px
+    .box .percent .number h2 span {
+        font-size: 24px
     }
-    .box .text{
-        padding:10px 0 0;
+    .box .text {
+        padding: 10px 0 0;
     }
-    .formdiv{
-        background-color:black;
-        width:300px;
-        height:400px;
-        display:flex;
+    .formdiv {
+        background-color: black;
+        width: 300px;
+        height: 400px;
+        display: flex;
         justify-content: space-around;
         align-items: center;
     }
-    #goal{
-        color:grey;
+    #goal {
+        color: grey;
     }
-    #goalnmbr{
-        color:grey;
+    #goalnmbr {
+        color: grey;
     }
-    #submit{
-        color:grey;
+    #submit {
+        color: grey;
     }
-    #goalunit{
-        color:grey;
+    #goalunit {
+        color: grey;
     }
-    #add{
-        color:grey;
-        display:none;
-    }   
-    .chart{
-        top:110px;
-        display:none;
-        background-color:  rgb(55,55,55);
-
+    #add {
+        color: grey;
+        display: none;
     }
-    #navbar-a1{
-        transition:.5s;
+    .chart {
+        top: 110px;
+        display: none;
+        background-color: white;
     }
-    #navbar-a2{
-        transition:.5s;
+    #navbar-a1 {
+        transition: .5s;
     }
-    #navbar-a3{
-        transition:.5s;
+    #navbar-a2 {
+        transition: .5s;
+    }
+    #navbar-a3 {
+        transition: .5s;
     }
     .rowPhone {
         display: none;
     }
-
 }
-#nav-icon1, #nav-icon2, #nav-icon3, #nav-icon4 {
+
+#nav-icon1,
+#nav-icon2,
+#nav-icon3,
+#nav-icon4 {
     width: 60px;
     height: 45px;
     position: relative;
@@ -495,14 +491,16 @@ body{
     -o-transition: .5s ease-in-out;
     transition: .5s ease-in-out;
     cursor: pointer;
-  }
-  
-  #nav-icon1 span, #nav-icon3 span, #nav-icon4 span {
+}
+
+#nav-icon1 span,
+#nav-icon3 span,
+#nav-icon4 span {
     display: block;
     position: absolute;
     height: 9px;
     width: 100%;
-    background-color:rgb(132, 0, 255);
+    background-color: rgb(132, 0, 255);
     border-radius: 9px;
     opacity: 1;
     left: 0;
@@ -514,37 +512,37 @@ body{
     -moz-transition: .25s ease-in-out;
     -o-transition: .25s ease-in-out;
     transition: .25s ease-in-out;
-  }
-  
-  #nav-icon1 span:nth-child(1) {
+}
+
+#nav-icon1 span:nth-child(1) {
     top: 0px;
-  }
-  
-  #nav-icon1 span:nth-child(2) {
+}
+
+#nav-icon1 span:nth-child(2) {
     top: 18px;
-  }
-  
-  #nav-icon1 span:nth-child(3) {
+}
+
+#nav-icon1 span:nth-child(3) {
     top: 36px;
-  }
-  
-  #nav-icon1.open span:nth-child(1) {
+}
+
+#nav-icon1.open span:nth-child(1) {
     top: 18px;
     -webkit-transform: rotate(135deg);
     -moz-transform: rotate(135deg);
     -o-transform: rotate(135deg);
     transform: rotate(135deg);
-  }
-  
-  #nav-icon1.open span:nth-child(2) {
+}
+
+#nav-icon1.open span:nth-child(2) {
     opacity: 0;
     left: -60px;
-  }
-  
-  #nav-icon1.open span:nth-child(3) {
+}
+
+#nav-icon1.open span:nth-child(3) {
     top: 18px;
     -webkit-transform: rotate(-135deg);
     -moz-transform: rotate(-135deg);
     -o-transform: rotate(-135deg);
     transform: rotate(-135deg);
-  }
+}
